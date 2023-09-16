@@ -76,7 +76,7 @@ img {
 .add-contact {
   display: flex;
   gap: 40px;
-  padding: 24px 0 24px 0;
+  /* padding: 24px 0 24px 0; */
 }
 
 .item-nav {
@@ -85,6 +85,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0 24px 0;
 }
 
 .contacts {
@@ -107,6 +108,7 @@ img {
 
 .hero-img {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .feature-list {
@@ -138,7 +140,8 @@ img {
   line-height: 1.07;
   letter-spacing: 1.12px;
 
-  padding: 182px 472px 0 472px;
+  /* padding: 182px 472px 0 472px; */
+  max-width: 496px;
 }
 
 .button {
@@ -148,10 +151,11 @@ img {
   letter-spacing: 0.64px;
   color: #ffffff;
   cursor: pointer;
-  display: inline-flex;
+  display: block;
   padding: 16px 32px;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
+  min-width: 169px;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 48px 635px 188px 635px;
