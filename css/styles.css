@@ -47,7 +47,7 @@ img {
 }
 
 .logo,
-.logo-2 {
+.logo-two {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -62,7 +62,7 @@ img {
   margin-right: 76px;
 }
 
-.logo-2 {
+.logo-two {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -174,7 +174,7 @@ img {
 
 .feature-list-item {
   display: flex;
-  flex-basis: (100%-24 * 3)/4;
+  flex-basis: calc((100% - 3 * 24px) / 4);
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -274,7 +274,6 @@ img {
 }
 
 .project-card {
-  border: 1px solid #e7e9fc;
   background: #fff;
   display: flex;
   width: 360px;
@@ -295,6 +294,7 @@ img {
   align-self: stretch;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .end {
