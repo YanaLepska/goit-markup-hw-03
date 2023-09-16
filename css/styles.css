@@ -27,8 +27,8 @@ img {
   display: block;
 }
 
-.conteiner {
-  padding: 24px 15px;
+.container {
+  padding: 0 15px 0 15px;
   width: 1158px;
   margin: 0 auto;
 }
@@ -76,6 +76,7 @@ img {
 .add-contact {
   display: flex;
   gap: 40px;
+  padding: 24px 0 24px 0;
 }
 
 .item-nav {
@@ -267,6 +268,7 @@ img {
 .end {
   background: #2e2f42;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-text {
   color: #f4f4fd;
@@ -274,5 +276,4 @@ img {
   letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
-  margin-bottom: 100px;
 }
