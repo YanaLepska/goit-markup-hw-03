@@ -46,7 +46,8 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.logo {
+.logo,
+.logo-2 {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -55,8 +56,15 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
 
+.logo {
   margin-right: 76px;
+}
+
+.logo-2 {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .studio {
@@ -110,28 +118,6 @@ img {
   background: #2e2f42;
   padding: 188px 0;
 }
-
-.feature-list {
-  display: inline-flex;
-  gap: 24px;
-}
-
-.feature-list-item {
-  display: flex;
-  width: (1128-24 * 3)/4;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.feature-title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-  color: #2e2f42;
-}
-
 .main-title {
   color: #ffffff;
   text-align: center;
@@ -139,9 +125,9 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-
-  /* padding: 182px 472px 0 472px; */
   max-width: 496px;
+  margin: auto;
+  margin-bottom: 48px;
 }
 
 .button {
@@ -157,13 +143,50 @@ img {
   gap: 10px;
   min-width: 169px;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin: 48px 635px 188px 635px;
+  margin: auto;
+  height: 56px;
+  border: none;
 }
 
 .button:hover,
 .button:focus {
   background: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-list-item {
+  display: flex;
+  flex-basis: (100%-24 * 3)/4;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -212,6 +235,7 @@ img {
   align-items: center;
   gap: 8px;
   padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .card-title {
@@ -220,12 +244,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .card-text {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .portfolio-title {
@@ -261,12 +288,13 @@ img {
 
 .project-card-content {
   display: flex;
-  padding: 0px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .end {
